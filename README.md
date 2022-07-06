@@ -2,7 +2,7 @@
 
 Contraption that opens or closes the gate of a chicken coop. It uses node red as brain and mqtt as comunication protocol. The gate will open and close depending on the position of the sun. You can define a time range for opening and closing. This range will be used if the sunrise or sunset is outside of this range. The gate will be controlled by these times when sunrise/sunset is not in this rage. [You can change the sunrise/sunset event to your needs](https://github.com/rdmtc/node-red-contrib-sun-position/wiki/Base-Functions#sun-times).
 
-<img src="https://user-images.githubusercontent.com/87583841/177513696-c317f795-c482-4f3a-914d-01099f40bae9.png"  width="300" align="right">
+<img src="https://user-images.githubusercontent.com/87583841/177513696-c317f795-c482-4f3a-914d-01099f40bae9.png"  width="30%" align="right">
 
 Example settings:
 - open from: 6:00 AM
@@ -23,23 +23,29 @@ Example cases:
 - Waterproof Connectors TE Connectivity AMP Superseal 1.5
 - 3D Printed and sealed Housing
 
-<img src="https://user-images.githubusercontent.com/87583841/177508631-c604d70c-6840-4101-81b9-23fd38725103.png" width="1000">
-<img src="https://user-images.githubusercontent.com/87583841/177508322-37b72492-7daa-4d70-b307-69d66dd07091.jpg" width="1000">
+<img src="https://user-images.githubusercontent.com/87583841/177508631-c604d70c-6840-4101-81b9-23fd38725103.png" width="100%">
+<img src="https://user-images.githubusercontent.com/87583841/177508322-37b72492-7daa-4d70-b307-69d66dd07091.jpg" width="100%">
+<img src="https://user-images.githubusercontent.com/87583841/177523832-e05ecd4e-7dab-4b55-a223-1f2048c35bba.jpg" width="100%">
+
 
 ## Hardware dependencies
-<img src="https://user-images.githubusercontent.com/87583841/177510831-5efa2f2f-81bf-4123-974b-35eee85741f6.png" width="1000">
+<img src="https://user-images.githubusercontent.com/87583841/177510831-5efa2f2f-81bf-4123-974b-35eee85741f6.png" width="100%">
 * Current sense output of the motor driver is also filtered by a lowpass.
 
 ## Webinterface
-<img src="https://user-images.githubusercontent.com/87583841/177512667-4377206e-3c97-492d-b42d-e400036e0bc6.PNG" width="1000">
+<img src="https://user-images.githubusercontent.com/87583841/177512667-4377206e-3c97-492d-b42d-e400036e0bc6.PNG" width="100%">
 
 ## NodeRed and MQTT
-<img src="https://user-images.githubusercontent.com/87583841/177511456-48f2e264-8f94-4337-a0d1-d63007fbd9b6.png" width="200">
+<img src="https://user-images.githubusercontent.com/87583841/177511456-48f2e264-8f94-4337-a0d1-d63007fbd9b6.png" width="20%" float="left">
 
 ### Required NodeRed Nodes
 - [node-red-contrib-sun-position](https://flows.nodered.org/node/node-red-contrib-sun-position)
 - [node-red-dashboard](https://flows.nodered.org/node/node-red-dashboard)
 - [node-red-contrib-ui-led](https://flows.nodered.org/node/node-red-contrib-ui-led)
 
-Example docker-compose.yml file.
-Example MQTT config
+[Node Red Flow](https://github.com/CarlKuhligk/CickengateController/blob/main/src/Node%20Red%20Flow.json)
+
+Example [docker-compose.yml](https://github.com/CarlKuhligk/CickengateController/blob/main/src/Example%20Docker%20Compose.yml) file.
+
+Example [MQTT config](https://github.com/CarlKuhligk/CickengateController/blob/main/src/Example%20MQTT%20Config)
+
