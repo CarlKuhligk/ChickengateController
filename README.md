@@ -1,6 +1,9 @@
 # CickengateController
 Contraption that opens or closes the gate of a chicken coop. It uses node red as brain and mqtt as comunication protocol. The gate will open and close depending on the position of the sun. You can define a time range for opening and closing so if the sunrise or sunset is outside of this range, the gate will be controlled by these times.
 
+
+<img src="https://user-images.githubusercontent.com/87583841/177513696-c317f795-c482-4f3a-914d-01099f40bae9.png"  style="float:center; width:100px">
+
 ## Main components
 - Linear Actuator with integrated rotary encoder
 - ESP32 Matrix Core + Wifi antenna
@@ -16,8 +19,15 @@ Contraption that opens or closes the gate of a chicken coop. It uses node red as
 <img src="https://user-images.githubusercontent.com/87583841/177510831-5efa2f2f-81bf-4123-974b-35eee85741f6.png" width="1000">
 * Current sense output of the motor driver is also filtered by a lowpass.
 
+## Webinterface
+<img src="https://user-images.githubusercontent.com/87583841/177512667-4377206e-3c97-492d-b42d-e400036e0bc6.PNG" width="1000">
+
 ## NodeRed and Docker
 <img src="https://user-images.githubusercontent.com/87583841/177511456-48f2e264-8f94-4337-a0d1-d63007fbd9b6.png" width="200">
 
 ### Required NodeRed Nodes
-- 
+- [node-red-contrib-sun-position](https://flows.nodered.org/node/node-red-contrib-sun-position)
+- [node-red-dashboard](https://flows.nodered.org/node/node-red-dashboard)
+- [node-red-contrib-ui-led](https://flows.nodered.org/node/node-red-contrib-ui-led)
+
+
